@@ -1,0 +1,90 @@
+.row {
+    display: flex;
+    justify-content: 0px;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex-basis: 0px;
+    margin-right: 0px; 
+}
+
+.row_column {
+    display: flex;
+    flex-basis: 0px;
+    margin-right: 0px; 
+}
+
+.row_column .column{
+    flex-basis: 10px;
+    margin-right: 10px; 
+}
+
+.crecer_centro:hover{
+    transform: scale(2);
+}
+
+.desaparecer {
+    transition: 2s ease-in-out;
+}
+
+.desaparecer:hover{
+    opacity: 0%;
+    transition: 2s ease-in-out;
+}
+
+.mover_derecha:hover img {
+    opacity:0.1;
+    transition: opacity 3s 1s;
+}
+
+.mover_derecha img {
+    transition: opacity 3s;
+}
+
+.mover_derecha{
+    transition: margin-left 4s, opacity 0s 3s,background-color 2s ;
+}
+
+.mover_derecha:hover {
+    margin-left: 320px;
+    background-color: red;
+    transition: margin-left 4s, opacity 3s 1s,background-color 2s 2s;
+}
+
+.encoger:hover{
+    transform-origin: top right;
+    transform: scale(0);
+    transition: transform 2s ease-in-out;
+}
+
+.encoger{
+    transform-origin: bottom left;
+    transform: scale(1);
+    transition: transform 2s;
+}
+
+.row_column:hover .rotar{
+    transform: rotate(180deg);
+    transition:3s;
+}
+
+.row_column:hover .crecer{
+    transform-origin: top right;
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.row_column .rotar{
+    transition:3s;
+}
+
+.row_column .crecer{
+    transform-origin: top right;
+    transition: transform 1s;
+}
+
+
+
+
+

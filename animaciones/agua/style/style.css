@@ -1,0 +1,47 @@
+.agua {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url(../img/resumen-superficie-agua-piscina-fondo-reflejo-luz-sol.jpg);
+
+}
+
+.onda div{
+    position: absolute;
+    opacity: 0%;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height:100px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #e9e9e9;
+    border-radius: 100%;
+    transform-origin: center;
+}
+
+  .onda1{
+    animation: onda 4s infinite;
+  }
+  .onda2{
+    animation: onda 4s infinite;
+    animation-delay: 0.3s;
+  }
+  .onda3{
+    animation: onda 4s infinite;
+    animation-delay: 0.5s;
+  }
+  .onda4{
+    animation: onda 4s infinite;
+    animation-delay: 0.7s;
+  }
+  .onda5{
+    animation: onda 4s infinite;
+    animation-delay: 0.9s;
+  }
+
+body {padding: 0%; margin: 0%;}
+
+@keyframes onda {
+    0% {opacity: 0%;transform:scale(0.1);}
+    25% { opacity: 100%;}
+    100% { opacity: 0%; transform:scale(10);}
+}

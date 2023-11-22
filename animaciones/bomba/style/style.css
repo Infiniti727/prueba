@@ -1,0 +1,107 @@
+
+
+.tierra {
+    width: 100%;
+    position: absolute;
+    height: 1000px;
+    margin: 0;
+    bottom: 0;
+    background-image: url(../img/forest-trees-drawing.png);
+    background-size: cover;
+    animation: muerto 0s forwards 4s;
+}
+.onda1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height:100px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #d7d7d7;
+    border-radius: 100%;
+    transform-origin: center;
+    animation: onda 1s forwards 3s;
+  
+}
+
+@keyframes onda {
+    0% {opacity: 0%;transform:scale(0.1);}
+    25% { opacity: 100%;}
+    100% { opacity: 0%; transform:scale(30);}
+}
+
+body {padding: 0%; margin: 0%; overflow: hidden; }
+
+.hongo {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100px;
+    z-index: -1;
+    background-image: url(../img/hongo.png);
+    background-size: cover;
+    height:100px;
+    transform: translate(-50%, -50%);
+    transform-origin: bottom;
+    opacity: 0%;
+    animation: explosion 5s forwards 4s;
+}
+
+.resplandor {
+    position: absolute;
+    opacity: 0%;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: white;
+    z-index: 50;
+    animation: resplandor 2s linear;
+    animation-delay: 4s;
+}
+
+.cielo {
+    position: absolute;
+    z-index: -2;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: #add8e6;
+    animation: naranja 3s forwards; 
+    animation-delay: 4s;
+}
+
+.bomba {
+    z-index: -1;
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(../img/bomba.png);
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: caida 3s normal ease-in;
+}
+
+@keyframes caida {
+    100% {top: 100%;}
+}
+
+@keyframes naranja {
+    100% {background-color: orange;}
+}
+
+@keyframes marron {
+    100% {background-color: maroon;}
+}
+
+
+@keyframes resplandor {
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+@keyframes explosion {
+    0%{opacity: 0%;}
+    100%{opacity: 100%; transform: scale(9);}
+}
+
+@keyframes muerto {
+    100%{background-image: url(../img/Lovepik_com-401637718-dead-tree.png);}
+}
