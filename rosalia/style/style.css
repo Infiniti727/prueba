@@ -1,0 +1,343 @@
+body {
+    margin: 0px;
+}
+
+#comments_desktop {
+    display: none;
+}
+
+#barra_busqueda{
+    display: none;
+}
+
+.logo {
+    height: 27px;
+    margin: 15px;
+    margin-left: 20px;
+    float: left;
+    
+}
+
+.photo {
+    width: 100%;
+}
+
+.pfp {
+    float: left;
+    margin: 10px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+#header {
+    border-bottom: 1px solid rgb(205, 205, 205);
+    width: 100%;
+    overflow: hidden;
+}
+
+#current_acc {
+    float: right;
+}
+
+#log_in {
+    border-radius: 10px;
+    padding:10px;
+    float: left;
+    background-color: #0095F6;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+
+#Sing_up {
+    margin-top: 20px;
+    float: left;
+    margin-right: 2px;
+}
+
+#Sing_up a{
+    color: #0095F6;
+    font-family:Arial, Helvetica, sans-serif; 
+}
+
+#log_in a {
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+#account_name {  
+    clear: right;
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 0px; 
+    font-weight: bold; 
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+#place {
+    margin-left: 70px;
+    margin-top: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#account {
+    overflow: hidden;
+}
+
+#Me_gustas {
+    float: left;
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight:bold;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+
+#Fecha {
+    margin-left: 10px;
+    clear: both;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#icons #icon_bookmark {
+    float: right;
+}
+
+#icons img {
+    height: 50px;
+    margin: 10px;
+    margin-bottom: 10px;
+    float: left;   
+}
+
+#icons {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+    #icons img {
+        height: 70px;
+        margin: 10px;
+        margin-bottom: 10px;
+        float: left;   
+    }
+
+    #Fecha {
+        margin-top: 5px;
+        margin-left: 10px;
+        clear: both;
+        font-size: 25px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    #Me_gustas {
+        float: left;
+        margin-top: 0px;
+        font-size: 30px;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-left: 10px;
+    }
+
+    .logo {
+        height: 70px;
+    }
+
+    .pfp {
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 70px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+    }
+
+    #account_name {  
+        font-size: 23px;
+        clear: right;
+        margin-left: 70px;
+        margin-top: 15px;
+        margin-bottom: 0px; 
+        font-weight: bold; 
+        font-family:Arial, Helvetica, sans-serif;  
+    }
+    
+    #place {
+        font-size: 23px;
+        margin-left: 70px;
+        margin-top: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    #log_in {
+        border-radius: 10px;
+        padding:10px;
+        float: left;
+        background-color: #0095F6;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    
+    #Sing_up {
+        margin-top: 30px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    #Sing_up a{
+        font-size: 23px; 
+    }
+    
+    #log_in a {
+        font-size: 23px; 
+    }
+   }
+
+
+   @media screen and (min-width: 1000px) {
+    
+    #content {
+        width: 40%;
+        overflow: hidden;
+    }
+
+    #account {
+        float: right;
+        width: 40%;
+        border-bottom: 1px solid #e3e3e3;;
+    }
+
+    .photo {
+        float: left;
+        min-height: 450px;
+        width: 60%;
+    }
+
+    #page {
+        position: inherit;
+        max-width: 1005px;
+        align-items: center;
+        position: relative;
+        margin:0 auto;
+        overflow: hidden;
+        margin-top: 50px;
+        border: 1px solid #e3e3e3;
+    }
+
+    #icons {
+        float: none;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #icons img {
+        height: 40px;
+        margin: 10px;
+        margin-bottom: 10px;
+        float: left;   
+    }
+
+    #Fecha {
+        float: none;
+        margin-top: 0px;
+        font-size: 15px;
+        font-family:Arial, Helvetica, sans-serif;
+        
+    }
+
+    #Me_gustas {
+        float: none;
+        margin-top: 0px;
+        font-size: 20px;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-bottom: 0px;
+    }
+
+    #detalles {
+        overflow: hidden;
+        float: right;
+        width: 100%;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    #options {
+        position: absolute;
+        overflow: hidden;
+        border-top: 1px solid #e3e3e3;
+        width: 40%;
+        bottom: 0%;
+    }
+
+    .logo {
+        height: 70px;
+        
+    }
+
+    #barra_busqueda{
+        display: unset;
+        position: absolute;
+        top: 30%;
+        left:35%;
+        width: 30%;
+        height: 40%;
+    }
+
+    .pfp {
+        float: left;
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 50px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+    }
+
+    #account_name {  
+        font-size: 20px;
+        clear: right;
+        margin-left: 70px;
+        margin-top: 12px;
+        margin-bottom: 0px; 
+        font-weight: bold; 
+        font-family:Arial, Helvetica, sans-serif;  
+    }
+    
+    #place {
+        font-size: 15px;
+        margin-left: 70px;
+        margin-top: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #current_acc{
+        display: none;
+    }
+    
+    #header{
+        position: relative;
+    }
+
+    #comments_desktop {
+        display: unset;
+    }
+   }
+
+   @media screen and (max-width: 340px) {
+
+    .logo {
+        margin-right: 1px;
+        margin-left: 7px;
+    }
+
+    #log_in {
+        padding: 5px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    #Sing_up {
+        font-size: 12px;
+    }
+   }

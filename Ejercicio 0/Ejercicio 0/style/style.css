@@ -1,0 +1,186 @@
+
+body {
+    margin:0px;
+    font-family:  'trebuchet ms', arial, sans-serif;
+}
+
+#header h1 {
+    margin-left: 8px;
+    margin-top: 0px;
+    color: #fffef9;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+#site_content {
+    margin: 1%;
+    clear: both;
+    overflow: hidden;
+}
+
+#site_content ul {
+    padding-left: 20px;
+}
+
+#header h2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    color: #a5938b;
+    font-size: 10px;
+    text-decoration: none;
+}
+
+h1 :link , h1 :visited {
+    color: #fffef9;
+    text-decoration: none;
+}
+
+ 
+#header {
+  background-color: #000000;
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.clear-both{
+    clear: both;
+    padding: 0%;
+    margin: 0%;
+    height: 1px;
+    width: 100%;
+    background-color: transparent ;
+}
+
+#logo {
+    margin: 0px 1%;
+    background-color: #1d1d1d;
+}
+
+
+#menu {
+    object-fit: cover;
+    padding-bottom: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: right;
+    
+}
+
+#menubar{
+    overflow: hidden;
+    background-color: #2d2d2d;
+    position: relative;
+    margin: 0px 1%;
+}
+
+#menu li {
+    float: left;
+    font-size: 9px;
+    display: flex;
+    padding:  4px 4px;
+    margin-right: 15px;
+    margin-top: 8px;
+    background-color: #5f4236;
+}
+
+#menu li:first-child {
+    margin-left: px;
+}
+
+#content {
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+#content h1 {
+    font-size: 15px;
+}
+
+#content p {
+    font-size: 9px;
+}
+
+#content li  {
+    font-size: 9px;
+}
+
+#content h2 {
+    font-size: 13px;
+    color: #a5938b;
+}
+
+.sidebar {
+    border:#b3b3b3;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+
+#sidebar_container {
+    clear: both;
+    bottom: 0%;
+    position: relative;
+    float: left;
+    margin-top:0px;
+    max-width: 200px;
+}
+
+
+.sidebar_item p {
+    font-size: 9px;
+    
+}
+
+.sidebar_item h4 {
+    color: #ab9189;
+    margin-bottom: 0px ;
+    font-size: 10px;
+    
+}
+
+.sidebar_item h5 {
+    margin-top: 0px ;
+    font-size: 8px;
+    color: #919191;
+}
+
+.sidebar_item h3 {
+    font-size: 12px;
+}
+
+.sidebar_item :link ,  .sidebar_item :visited {
+    margin-top: 0px ;
+    font-size: 10px;
+    color: #ab9189;
+    text-decoration: none;
+}
+
+#menu li :link , #menu li :visited {
+    color: #fffef9;
+    text-decoration: none;
+}
+
+
+
+ul {
+    list-style-image: url('../img/bullet.png');   
+}
+
+#footer {
+    background-color: #000000;
+    padding-top: 29px;
+    padding-bottom: 45px;
+}
+
+#footer p {
+    color: white;
+    font-size: 9px;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="juego">
+        <div id="stats">
+            <label for="correctos">Parejas encontradas</label>
+            <input name="correctos" id="correctos" type="number" value="0" readonly>
+            <label for="errores">Errores</label>
+            <input name="errores" id="errores" type="number" value="0" readonly>
+        </div>
+        <div class="carta" numero="1" posicion="1" onclick="girar(this);" >
+            <div class="cara" style="background-image: url(../img/1.png);"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="2" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="3" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="4" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="5" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="6" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="7" onclick="girar(this);">
+            <div class="cara" ></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="8" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="9" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="10" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="11" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+        <div class="carta" posicion="12" onclick="girar(this);">
+            <div class="cara"></div>
+            <div class="reverso"></div>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>

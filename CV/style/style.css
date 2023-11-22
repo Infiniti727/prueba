@@ -1,0 +1,86 @@
+/* xs */
+.foto-perfil {
+    display: block;
+    max-width: 100px;
+    margin: auto;
+    
+}
+
+#header{
+    overflow: hidden;
+    background-color: #B4BDC6;
+    overflow: hidden;
+    padding: 5%;
+}
+
+
+#content {
+    overflow: hidden;
+}
+
+#header h1 {
+    text-align: center;
+
+}
+
+#contact {
+    text-align: center;
+    font-size: 10px;
+}
+
+#content div {
+    background-color: #D0D8DF;
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+#content h3 {
+    padding-left: 10px;
+    background-color: #8D969F;
+    margin: 0%;
+}
+
+#content .vr {
+    background-color: black;
+}
+
+#content ul {
+    padding: 12px;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+#content .sub {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#content li {
+    font-size: 12px;
+}
+
+#content p {
+    padding: 10px;
+    font-size: 12px;
+    margin: 0px;
+}
+
+/* sm */
+@media (min-width: 768px) {
+    .foto-perfil {
+        max-width: 150px;
+    }
+}
+/* md */
+@media (min-width: 992px) {
+    .foto-perfil {
+        max-width: 200px;
+    }
+}
+/* lg */
+@media (min-width: 1200px) {
+    .foto-perfil {
+        max-width: 250px;
+    }
+}
