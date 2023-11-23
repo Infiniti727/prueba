@@ -11,7 +11,7 @@ for(carta of cartas ) {
         while(bucle){
             numero = Math.floor(Math.random() * 12) + 1 ;
             if (!numeros.includes(numero)){
-                cartas[numero-1].style.backgroundImage = "url('../img/"+cont+".png')";
+                cartas[numero-1].style.backgroundImage = "url('img/"+cont+".png')";
                 numeros.push(numero);
                 bucle=false;
             }
@@ -20,7 +20,7 @@ for(carta of cartas ) {
         while(bucle){
             numero = Math.floor(Math.random() * 12) + 1 ;
             if (!numeros.includes(numero)){
-                cartas[numero-1].style.backgroundImage = "url('../img/"+cont+".png')";
+                cartas[numero-1].style.backgroundImage = "url('img/"+cont+".png')";
                 numeros.push(numero);
                 bucle=false;
             }
