@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Naves Espaciales</title>
+    <link href="style/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div id="divSeguidor"></div>
+    <div class="game-container">
+            <div id="tiempo">
+                <label>Tiempo hasta el próximo escaneo Cylon:</label><br>
+                <p id="temporizador"></p>
+            </div>
+            <div id="estadisticas">
+                <img src="img/icon_people.png" class="icono">
+                <a id="survivor-meter-num" class="medidor">90</a><br>
+                <img src="img/icon_energy.png" class="icono">
+                <a id="energy-meter-num" class="medidor energy-meter-num">90</a><br>
+                <img src="img/icon_shield.png" class="icono">
+                </meter><a id="damage-meter-num" class="medidor damage-meter-num"" >90</a><br>
+            </div>
+            <div id="recalentamiento">
+                <label>Recalentamiento del motor de salto:</label><br>
+                <a id="jump-progress-num">100</a><br><button type="button" id="salto" onclick="salto_emergencia()">SALTO DE EMERGENCIA</button><br>
+            </div>
+            <div id="opciones">
+                <button type="button" onclick="mostrarPeleaInterface()">Pelea</button>
+                <button type="button" onclick="mostrarMotorSaltoInterface()">Motor de Salto</button>
+            
+
+        <!-- Interfaz del Escudo -->
+        <div id="interfaces">
+                <!-- Interfaz del Pelea -->
+                <form id="pelea-interface" style="display: none;">
+                    <hr class="rounded">
+
+                    <h2>Escudo</h2>
+
+                    <img src="img/icon_energy.png" class="icono ">
+                    <a id="energy-meter-num" class="medidor energy-meter-num">90</a><br><br>
+                    
+                    <a>Escudo</a>
+                    <input class="input_rango" onchange="cambiar_num(this)" type="range" id="shield" min="0" max="10" value="0"><a id="shield-num">0</a><br>
+
+                    <hr class="rounded">
+
+                    <h2>Arma</h2>
+                    
+                    <input type="radio" id="weapon1" name="weapon" checked>
+                    <input type="radio" id="weapon2" name="weapon" disabled>
+                    
+                    <p id="laser_label" style="">Laseres</p>
+                    <p id="misiles_label" style="color:gray">Misiles</p>
+                    <a id="ammunition-meter-num" style="color:gray">10</a>
+                    
+                    <br>
+                    <button type="button" onclick="disparo()" id="disparar">Disparar</button>
+                    <button type="button" onclick="recarga()" >Recargar</button><br>
+                    <button type="button" onclick="cambiar_arma()">Cambiar Arma</button>
+                    <button type="button" onclick="ocultarTodasLasInterfaces(true)">Volver</button>
+                </form>
+
+                <!-- Interfaz de la Tripulación -->
+               
+
+                <!-- Interfaz del Motor de Salto -->
+                <form id="motor-salto-interface" style="display: none;">
+                    <hr class="rounded">
+                    <h2>Motor de Salto</h2>
+                    
+                    <img src="img/icon_energy.png" class="icono ">
+                    <a id="energy-meter-num" class="medidor energy-meter-num">90</a><br><br>
+                    <a>Refrigerar motor</a>
+                    <input class="input_rango" type="range" id="refrigerator" onchange="cambiar_num(this)" min="0" max="10" value="0"><a id="refrigerator-num">0</a><br>
+                    
+                    <button type="button" onclick="ocultarTodasLasInterfaces(true)">Volver</button>
+                </form>
+
+            </div>
+            
+        </div>
+        <div id="planetas">
+
+            <!--
+                <div>
+                <img src="img/planeta1.png" onclick="pelea(this)" class="planeta">
+            </div>
+            <div>
+                <img src="img/planeta2.png" onclick="tesoro(this)" class="planeta">
+            </div>
+            <div>
+                <img src="img/planeta3.png" onclick="pelea(this)" class="planeta">
+            </div>
+            <div>
+                <img src="img/planeta4.png" onclick="tesoro(this)" class="planeta">
+            </div>
+            -->
+            
+            <img src="img/sol.png" id="sun">
+            <img src="img/planeta1.png" onclick="pelea(this)" onmouseover="mostrarEstadisticas(this)" onmouseleave="cerrarEstadisticas()" class="planeta" id="1">
+            <img src="img/planeta2.png" onclick="tesoro(this)" onmouseover="mostrarEstadisticas(this)" onmouseleave="cerrarEstadisticas()" class="planeta" id="2">
+            <img src="img/planeta3.png" onclick="pelea(this)" onmouseover="mostrarEstadisticas(this)" onmouseleave="cerrarEstadisticas()" class="planeta" id="3">
+            <img src="img/planeta4.png" onclick="tesoro(this)" onmouseover="mostrarEstadisticas(this)" onmouseleave="cerrarEstadisticas()" class="planeta" id="4">
+        </div>
+        <div id="pelea">
+            <div id="naves">
+                <img src="./img/nave_mala.png">
+                <img src="./img/nave_buena.png">
+            </div>
+            <br>
+            <div id="medidores">
+                <div id="enemigo">
+                    <img src="img/icon_enemy.png" class="icono">
+                    <a id="enemy-meter-num" class="medidor" >90</a>
+
+                </div>
+                <div id="nave">
+                    <img src="img/icon_shield.png" class="icono">
+                    <a id="damage-meter-num" class="medidor damage-meter-num" >90</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="pop_up">
+            <p id="mensaje"></p>
+            
+        </div>
+        
+    </div>
+    <div id="saltos">
+        <a>Saltos </a><a id="saltos_num">0</a><a>/10</a>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>

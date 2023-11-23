@@ -1,0 +1,309 @@
+button {
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: none;
+    outline:none;
+    border: 2px solid transparent;
+    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)) padding-box, linear-gradient(40deg, rgba(14,0,255,1) 0%, rgba(173,0,255,1) 100%) border-box;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(40deg, rgba(14,0,255,0.1) 0%, rgba(173,0,255,0.1) 100%) padding-box, linear-gradient(40deg, rgba(14,0,255,1) 0%, rgba(173,0,255,1) 100%) border-box;
+}
+
+button:active {
+    background: linear-gradient(40deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)) padding-box, linear-gradient(40deg, rgba(14,0,255,1) 0%, rgba(173,0,255,1) 100%) border-box;
+}
+
+button:disabled , button[disabled] {
+    background: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)) padding-box, linear-gradient(40deg, rgb(41, 41, 41) , rgb(179, 179, 179) 100%) border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+}
+
+#temporizador{
+    color: green;
+    font-size: 20px;
+}
+
+progress {
+    border: none;
+}
+
+.progress-rojo::-webkit-progress-value { background-color: rgb(255, 0, 0)}
+
+.progress-amarillo::-webkit-progress-value { background-color: rgb(255, 251, 0)}
+
+.progress-verde::-webkit-progress-value { background-color: rgb(43, 255, 0)}
+
+progress::-webkit-progress-bar { background: white}
+
+
+#interfaces a {
+    top: -5px;
+    position: relative;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.icono {
+    width: 25px;
+    margin-left: 5px;
+}
+
+.medidor {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+#tiempo, #estadisticas, #recalentamiento, #opciones, #pelea, #pop_up, #saltos, #divSeguidor {
+    padding: 10px;
+    background-color: rgb(0 0 0 / 82%);
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 3px;
+    position: absolute;
+    text-align: center;
+
+}
+
+#divSeguidor {
+    font-size: 15px;
+    text-align: left;
+    width: 0px;
+    height: 0px;
+    opacity: 0%;
+    position: absolute;
+    pointer-events: none;
+    transition: opacity 0.3s, width 0.3s, height 0.3s, transform 0.3s;
+    overflow: hidden;
+  }
+
+#saltos {
+    margin: auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    top: 110px;
+}
+
+meter::-moz-meter-bar { 
+    background: red;
+  }
+
+meter:-moz-meter-optimum::-moz-meter-bar {
+    background:rgb(4, 255, 0);
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+    background: rgb(255, 251, 0);
+}
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+    background: rgb(255, 30, 0);
+}
+
+#recalentamiento {
+    bottom: 0%;
+    margin: auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+}
+
+#tiempo {
+    margin: auto;
+    width: fit-content;
+    left: 0;
+    right: 0;
+}
+
+.input_rango {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+label {
+    top:-10px
+}
+
+#opciones {
+    height: 60px;
+    right: 0%;
+    transition: height 1s;
+    overflow: hidden;
+    width: 400px;
+}
+
+#weapon1, #weapon2 {
+    opacity: 0%;
+    position: absolute;
+}
+
+#opciones #interfaces  {
+    text-align: center;
+}
+
+#planetas {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+#planetas img {
+    width: 0px;
+    transition: all 1s;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+#planetas2 div {
+    position: absolute;
+    animation: move 3s linear infinite;
+}
+
+#planetas2 img {
+    width: 0px;
+    transition: all 1s;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.planeta2 {
+    animation:rotate 3s linear infinite;
+} 
+
+#planetas #sun {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    transition: all 1s;
+    transform: scale(1)  translate(-50%, -50%);
+    cursor: unset;
+    z-index: -1;
+}
+
+#pelea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 700px;
+    text-align: center;
+}
+
+#pelea a {
+    top: -5px;
+    position: relative;
+}
+
+#pelea #medidores{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#pelea #medidores #nave{
+    width: 200px;
+}
+
+#pelea #medidores #enemigo{
+    width: 100px;
+}
+
+#pelea  #naves {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#pelea #naves img {
+    height: 100px;
+}
+
+
+
+.nave_principal {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#estadisticas {
+    text-align: right;
+    display: flex;
+    justify-content: center;
+}
+
+#pop_up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 400px;
+    text-align: center;
+}
+
+@keyframes move{
+	0%,100%{
+		transform: translate(25px, 0);
+	}
+
+	25%, 75%{
+		transform: translate(0, 0);
+	}
+	50%{
+		transform: translate(-25px, 0);
+	}
+}
+
+@keyframes rotate{
+	0%{
+		transform:rotate(0deg) translate(50px, 0) ;
+	}
+	100%{
+		transform:rotate(360deg) translate(50px, 0) ;
+	}
+}
