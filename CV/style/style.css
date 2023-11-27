@@ -66,21 +66,53 @@
     margin: 0px;
 }
 
+body {
+    margin: auto;
+    max-width: 768px;
+}
 /* sm */
 @media (min-width: 768px) {
     .foto-perfil {
-        max-width: 150px;
+        max-width: 100px;
     }
 }
 /* md */
 @media (min-width: 992px) {
     .foto-perfil {
-        max-width: 200px;
+        max-width: 150px;
     }
+
+   
 }
 /* lg */
 @media (min-width: 1200px) {
     .foto-perfil {
-        max-width: 250px;
+        max-width: 200px;
+    }
+
+    #content p {
+        padding: 10px;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    #content li {
+        font-size: 14px;
+    }
+
+    #content ul {
+        padding: 14px;
+        padding-left: 20px;
+        margin: 0px;
+    }
+    
+    #content .sub {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    #contact {
+        text-align: center;
+        font-size: 12px;
     }
 }
