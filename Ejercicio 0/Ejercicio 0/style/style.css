@@ -4,6 +4,22 @@ body {
     font-family:  'trebuchet ms', arial, sans-serif;
 }
 
+
+#content_header img{
+    width: 100%;
+    height: 100%;
+}
+
+#content_header{
+    padding: 10px;
+    background-color: #a7a7a7;
+    width: 95%;
+    margin: auto;
+    margin-top: 1%;
+    height: 100px;
+    overflow: hidden;
+}
+
 #header h1 {
     margin-left: 8px;
     margin-top: 0px;
@@ -260,35 +276,35 @@ ul {
     }
 
     #footer p {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .sidebar_item :link ,  .sidebar_item :visited {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .sidebar_item h5 {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     .sidebar_item h3 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     #content h1 {
-        font-size: 17px;
+        font-size: 15px;
     }
     
     #content p {
-        font-size: 11px;
+        font-size: 10px;
     }
     
     #content li  {
-        font-size: 11px;
+        font-size: 9px;
     }
     
     #content h2 {
-        font-size: 17px;
+        font-size: 14px;
     }
     
     
@@ -298,24 +314,24 @@ ul {
     
     
     .sidebar_item p {
-        font-size: 13px;
+        font-size: 10px;
     }
     
     .sidebar_item h4 {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     #header h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     #header h2 {
-        font-size: 18px;
+        font-size: 15px;
     }
     
     #menu li {
         padding: 10px;
-        font-size: 18px;
+        font-size: 15px;
     }
     
     #margin {
@@ -326,5 +342,13 @@ ul {
     #site_content {
         width: 60%;
         margin: auto;
+    }
+
+    #content_header{
+        width: 59%;
+        margin: auto;
+        margin-top: 1%;
+        padding: 10px;
+        background-color: #a7a7a7;
     }
 }
