@@ -1,0 +1,46 @@
+body {
+    margin: 0px;
+    background-color: #ff8754;
+    color: white;
+    font-size: 25px;
+}
+
+#botones {
+    display: flex;
+    position: fixed;
+    right: 0;
+    justify-content: space-between;
+    padding: 10px;
+    width: 300px;
+}
+
+.apartado {
+    width: 100%;
+    height: 920px;
+    position: relative;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 10px;
+}
+
+button {
+    color: black;
+    border-radius: 10px;
+    box-shadow: none;
+    outline:black;
+    border: 4px solid black;
+    background: white;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 11px;
+}
+
+#about .text {
+    width: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    position: absolute;
+}
