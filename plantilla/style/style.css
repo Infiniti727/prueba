@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    font-family: "trebuchet ms", arial, sans-serif;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background-color: #232323;
+    color: #535353;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.row1 {
+  height: 7rem;
+  background-color: #333333;
+}
+
+.row1 #header {
+    margin: 0 auto;
+    display: flex;
+    width: 960px;
+}
+
+.row1 #header #hgroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1 #header #hgroup h1 a, .row1 #header #hgroup h2 {
+    font-family: auto;
+    font-weight: normal;
+    font-size: 1rem;
+    color: #b4b4b4;
+}
+
+.row1 #header #hgroup h1 a {
+    font-size: 36px;
+}
+
+.row1 #header #hgroup h1, .row1 #header #hgroup h2 {
+    margin: 0;
+}
+
+.row1 #header #hgroup h2 {
+    font-size: 14px;
+}
+
+.row1 #header nav {
+    flex: 1;
+    margin: auto;
+}
+
+.row1 #header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.row1 #header nav li {
+    padding: 1rem 0.5rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.row1 #header nav li a {
+    font-size: 12px;
+    color: #b4b4b4;
+}
+
+.row2 {
+    width: 960px;
+    flex: 1;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.row2 #slider {
+    display: flex;
+    justify-content: center;
+}
+
+.row2 #services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.row2 #services .one_third figure {
+    flex: 1;
+    margin: 0;
+}
+
+.row2 #services .one_third figure img {
+    padding: 0.25rem;
+    border: 1px solid #bdbdbd;
+}
+
+.row2 #services .one_third figcaption {
+    width: 290px;
+    color: gray;
+}
+
+.row2 #services .one_third figcaption h2 {
+    font-style: italic;
+}
+
+.row2 #services .one_third figcaption .more {
+    display: flex;
+    justify-content: end;
+}
+
+.row2 #services .one_third figcaption .more a {
+    color: orange;
+}
+
+.row3 {
+    height: 5rem;
+    background-color: #333333;
+}
+
+.row4 {
+    height: 10rem;
+    justify-content: start;
+    padding-left: 1rem;
+    background-color: #232323;
+}
+
+.row4 a, .row4 p {
+    color: #b4b4b4;
+}
+
+.row4 #copyright {
+    width: 960px;
+    margin: 0 auto;
+}
