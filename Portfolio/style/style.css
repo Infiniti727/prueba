@@ -1,4 +1,5 @@
 body {
+    font-family: "Nunito";
     margin: 0px;
     background-color: #ff8754;
     color: white;
@@ -12,17 +13,26 @@ body {
     justify-content: space-between;
     padding: 10px;
     width: 300px;
+    z-index: 3;
 }
 
 .apartado {
     width: 100%;
-    height: 920px;
+    height: 940px;
     position: relative;
+}
+
+#home img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: appear 4s forwards;
 }
 
 h1 {
     font-size: 60px;
-    margin: 10px;
+    margin: 0px 10px;
 }
 
 button {
@@ -36,11 +46,105 @@ button {
     overflow: hidden;
     font-size: 12px;
     padding: 11px;
+    transition: border 0.3s, color 0.3s;
+}
+
+button:hover {
+    border: 4px solid #c25f34;
+    color: #c25f34;
+    
 }
 
 #about .text {
     width: 50%;
     top: 50%;
+    left:10px;
+    text-align: center;
     transform: translate(0%, -50%);
     position: absolute;
+}
+
+#about .image {
+    width: 50%;
+    top: 49%;
+    right:10px;
+    transform: translate(0%, -50%);
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    animation: float 4s infinite ease-in-out;
+}
+
+#about img {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+#works .text {
+    width: 50%;
+    top: 50%;
+    right:10px;
+    text-align: center;
+    transform: translate(0%, -50%);
+    position: absolute;
+    font-size: 40px;
+}
+
+#works .image {
+    width: 50%;
+    top: 49%;
+    left:10px;
+    transform: translate(0%, -50%);
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    animation: float 4s infinite ease-in-out;
+}
+
+#works img {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+#contact .text {
+    width: 40%;
+    top: 50%;
+    right:10%;
+    text-align: center;
+    transform: translate(0%, -50%);
+    position: absolute;
+    font-size: 40px;
+}
+
+#contact .text2 {
+    width: 40%;
+    top: 50%;
+    left:10%;
+    text-align: center;
+    transform: translate(0%, -50%);
+    position: absolute;
+    font-size: 40px;
+}
+
+#contact img {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+@keyframes float{
+    0%{top:49%}
+    50%{top:51%}
+    100%{top:49%}
+}
+
+@keyframes appear {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
 }
