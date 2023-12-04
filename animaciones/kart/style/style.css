@@ -1,0 +1,110 @@
+div {
+    background-image: url("../img/circuito.webp");
+    background-size: cover;
+    width: 1250px;
+    height: 800px;
+    position: relative;
+}
+
+#top {
+    background-image: url("../img/circuito_top.webp");
+    z-index: 1;
+    position: absolute;
+}
+
+img {
+    width: 40px;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 443px;
+    left: 730px;
+
+}
+
+img:hover {
+    animation: mover_coche 30s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mover_coche {
+    0% {
+        transform: rotate(-90deg);
+        top:443px;
+        left: 730px;
+    }
+
+    20% {
+        transform: rotate(-90deg);
+        top:443px;
+        left: 189px;
+    }
+
+    25% {
+        top: 500px;
+        left: 100px;
+    }
+
+    30% {
+        transform: rotate(-180deg);
+        top:589px;
+        left: 75px;
+    }
+
+    36% {
+        top:679px;
+        left: 110px;
+    }
+
+    40% {
+        transform: rotate(-270deg);
+        top:703px;
+        left: 210px; 
+    }
+
+
+    45% {
+        transform: rotate(-315deg);
+        top:680px;
+        left:300px; 
+    }
+
+    75% {
+        transform: rotate(-315deg);
+        top:100px;
+        left:879px; 
+    }
+
+    78% {
+        transform: rotate(-270deg);
+        top:88px;
+        left:963px; 
+    }
+
+    81% {
+        top:120px;
+        left:1050px; 
+    }
+
+    85% {
+        transform: rotate(-180deg);
+        top:225px;
+        left:1113px; 
+    }
+
+    89% {
+        top:350px;
+        left:1080px; 
+    }
+
+    94% {
+        transform: rotate(-90deg);
+        top:443px;
+        left: 933px; 
+    }
+
+    100% {
+        transform: rotate(-90deg);
+        top:443px;
+        left: 730px;
+    }
+}
