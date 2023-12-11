@@ -1,3 +1,5 @@
+
+
 class Planeta{
     constructor(){
             this.supervivientes = Math.floor(Math.random() * 101);

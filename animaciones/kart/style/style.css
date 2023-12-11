@@ -18,12 +18,16 @@ img {
     position: absolute;
     top: 443px;
     left: 730px;
+    animation: mover_coche 30s infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
 
 }
 
 img:hover {
     animation: mover_coche 30s infinite;
     animation-timing-function: linear;
+    animation-play-state:running;
 }
 
 @keyframes mover_coche {
