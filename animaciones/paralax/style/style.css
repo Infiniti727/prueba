@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+div {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#contenedor{
+    perspective: 100px;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#_0 {
+    background-image: url('../img/parallax0.png');
+    transform: translateZ(-400px) scale(5);  
+}
+
+#_1 {
+    background-image: url('../img/parallax1.png');
+    transform: translateZ(-350px) scale(4.5);  
+}
+
+#_2 {
+    background-image: url('../img/parallax2.png');
+    transform: translateZ(-300px) scale(4);  
+}
+
+#_3 {
+    background-image: url('../img/parallax3.png');
+    transform: translateZ(-250px) scale(3.5);  
+}
+
+#_4 {
+    background-image: url('../img/parallax4.png');
+    transform: translateZ(-200px) scale(3);  
+}
+
+#_5 {
+    background-image: url('../img/parallax5.png');
+    transform: translateZ(-150px) scale(2.5);  
+}
+
+#_6 {
+    background-image: url('../img/parallax6.png');
+    transform: translateZ(-100px) scale(2);  
+}
+
+#_7 {
+    background-image: url('../img/parallax7.png');
+    transform: translateZ(-50px) scale(1.5);
+}
+
+#_8 {
+    background-image: url('../img/parallax8.png');
+    transform: translateZ(0px) scale(1);
+}
+
+#cover {
+    background-color: #210002;
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
